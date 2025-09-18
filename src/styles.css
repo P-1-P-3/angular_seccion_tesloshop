@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: autumn --default, dracula --prefersdark;
+}
+
+@theme {
+    --font-array: 'Array Regular', sans-serif;
+}
+
+@font-face {
+    font-family: 'Array Regular';
+    font-weight: 700;
+    src: url('/assets/fonts/array/array-regular.ttf') format('truetype');
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
